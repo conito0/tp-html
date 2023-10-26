@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOOD FOOD🥙</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar ligth bg-ligth fixed-top bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">🥙GOOD FOOD🥙</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +36,26 @@
               <li><a class="dropdown-item" href="#">Drinks</a></li>
             </ul>
           </li>
-
         </ul>
+        <div class="d-md-none">
+          <ul class="navbar-nav me-auto-mb-2 mb-md-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="">Shopping cart</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Profile</a>
+              </li>
+          </ul>
+      </div>
+      <div class="d-none d-md-flex gap-2">
+        <a class="nav-item nav-link p-1" href="">
+          <i class="bi bi-cart4" style="font-size: 1.2rem;"></i>
+        </a>
+        <a class="nav-item nav-link p-1"href="">
+          <i class="bi bi-person" style="font-size: 1.3rem;"></i>
+        </a>
+      </div>
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -43,34 +63,287 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt=" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-end">
+          <h3 class ="fs-1" >Your favorite food, just a click away</h3>
+          <p>50% off every Friday and Saturday with debit</p>
+          <p><a class="btn btn-lg btn-primary" href=""select-categories"">Explore menu</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <h3 class ="fs-1">We make the food arrive on time, so you only have to worry about enjoying it</h3>
+          <p>Free shipping on Mondays</p>
+          <p><a class="btn btn-lg btn-primary" href=""select-categories"">Explore menu</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-end">
+          <h3 class ="fs-1">Each dish tells a story of tradition and modernity</h3>
+          <p>Paying with cash there is 25% off</p>
+          <p><a class="btn btn-lg btn-primary" href=""select-categories"">Explore menu</a></p>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
+  <section class="container" id="select-categories">
+    <p class="fs-2">Select categories</p>
+    <div class="row gap-4">
+      <div class="col d-flex justify-content-center p-0 gap-4">
+        <a href="#Pizzas" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+          <img 
+            src="/assets/categorias/porcion-de-pizza.png" 
+            alt="Pizzas"
+            style="width: 25px; height: 25px;"
+          >
+          <span class="fs-4 text-dark-emphasis">Pizzas</span>
+        </a>
+      </div>
+      <div class="col d-flex justify-content-center p-0 gap-4">
+        <a href="#Salads" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+          <img 
+            src="/assets/categorias/ensalada.png" 
+            alt="Salads"
+            style="width: 25px; height: 25px;"
+          >
+          <span class="fs-4 text-dark-emphasis">Salads</span>
+        </a>
+      </div>
+      <div class="col d-flex justify-content-center p-0 gap-4">
+        <a href="#Sandwiches" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+          <img 
+            src="/assets/categorias/sandwich.png" 
+            alt="Sandwiches"
+            style="width: 25px; height: 25px;"
+          >
+          <span class="fs-4 text-dark-emphasis">Sandwiches
+          </span>
+        </a>
+      </div>
+      <div class="col d-flex justify-content-center p-0">
+        <a href="#Drinks" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+          <img 
+            src="/assets/categorias/bebida.png" 
+            alt="Drinks"
+            style="width: 25px; height: 25px;"
+          >
+          <span class="fs-4 text-dark-emphasis">Drinks</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!--CATEGORÍAS Tareas-->
+  <section class="container-fluid" id="Categories">
+    <section class="text-center mb-5" id="Pizzas">
+      <h3 class="display-6">Margarita pizza</h3>
+      <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+        <!--PRODUCTO-->
+        <div class="col">
+          <div class="card h-100">
+            <img 
+              class="card-img-top"
+              src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+              alt=""
+            >
+            <div class="card-body p-4">
+              <div class="text-center">
+                <h5 class="fw-bolder">Sourdough with Italian sauce and gratin cheese.</h5>
+                <span>$1000</span>
+              </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center">
+                <a href="" class="btn btn-outline-success mt-auto">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="text-center mb-5" id="Drinks">
+      <h3 class="display-6">Coca cola</h3>
+      <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+        <!--PRODUCTO-->
+        <div class="col">
+          <div class="card h-100">
+            <img 
+              class="card-img-top"
+              src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+              alt=""
+            >
+            <div class="card-body p-4">
+              <div class="text-center">
+                <h5 class="fw-bolder">375 ml can.</h5>
+                <span>$900</span>
+              </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center">
+                <a href="" class="btn btn-outline-success mt-auto">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="text-center mb-5" id="Sandwiches">
+      <h3 class="display-6">Chicken sandwich</h3>
+      <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+        <!--PRODUCTO-->
+        <div class="col">
+          <div class="card h-100">
+            <img 
+              class="card-img-top"
+              src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+              alt=""
+            >
+            <div class="card-body p-4">
+              <div class="text-center">
+                <h5 class="fw-bolder">
+                  Homemade bread with cream cheese and shredded chicken.</h5>
+                <span>$400 </span>
+              </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center">
+                <a href="" class="btn btn-outline-success mt-auto">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center mb-5" id="Salads">
+      <h3 class="display-6">Caesar salad </h3>
+      <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+        <!--PRODUCTO-->
+        <div class="col">
+          <div class="card h-100">
+            <img 
+              class="card-img-top"
+              src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+              alt=""
+            >
+            <div class="card-body p-4">
+              <div class="text-center">
+                <h5 class="fw-bolder">Lettuce with string cheese and pieces of toast.</h5>
+                <span>$500</span>
+              </div>
+            </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center">
+                <a href="" class="btn btn-outline-success mt-auto">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+</main>
+
+<div
+class="container"
+>
 </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--CDN Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+  <form class="container mt-5 mb-5">
+    <h5>Form</h5>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Verify</label>
+    </div>
+    <div class="mb-3">
+      <label for="customRange1" class="form-label">Example range</label>
+      <input type="range" class="form-range" id="customRange1">
+    </div>
+    <select class="form-select mb-3" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+<main>
+<section class="container" id="selector-categories">
+
+</section>
+</main>
+ 
+
+
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">Good food</a>
+    <span class="mb-3 mb-md-0 text-body-secondary">&copy; Uconstanza🩷</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-facebook"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-instagram"></i></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-twitter-x"></i></a></li>
+  </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
-
-
-
-
