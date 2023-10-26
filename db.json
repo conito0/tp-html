@@ -1,0 +1,34 @@
+{
+    "Productos": [
+      {
+        "id": 1,
+        "titulo": "Hamburguesa",
+        "descripcion": "La hamburguesa es un producto cárnico, elaborado a partir de carne cortada en cubos, molida y mezclada con otros ingredientes, como condimentos y aditivos alimentarios.",
+        "tiempo": 20,
+        "imagen":"",
+        "precio": "$1000",
+        "responsable": "Coni",
+        "estado": "En produccion"
+      },
+      {
+        "id": 2,
+        "nombre": "Tarta de chocolate",
+        "descripcion": "Una torta o tarta es un tipo de pastel tradicionalmente redondo compuesto de una o más capas de masa dulce cocida al horno, rellenas y decoradas con crema pastelera, trufa de chocolate, Nata montada, fruta, chocolate u otros ingredientes.",
+        "tiempo": 15,
+        "imagen":"",
+        "precio": "$800",
+        "responsable": "Giuli",
+        "estado": "Entregado"
+      },
+      {
+        "id": 3,
+        "nombre": "Asado",
+        "descripcion": "El asado, barbacoa, parrilla o parrillada es una técnica de cocción mediante la cual los alimentos (generalmente cortes de carne) son expuestos al calor de fuego o brasas para que se cocinen lentamente.",
+        "tiempo": 35,
+        "imagen":"",
+        "precio": "$5000",
+        "responsable": "Nico",
+        "estado": "Por hacer"
+      }
+    ]
+  }
